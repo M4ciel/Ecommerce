@@ -6,16 +6,8 @@ const { definePartsStyle, defineMultiStyleConfig } =
 
 const baseStyle = definePartsStyle({
 	field: {
-		fontFamily: "Inter",
 		fontWeight: "regular",
 		color: "zinc.500",
-		bgColor: "zinc.900",
-		_hover: {
-			bgColor: "zinc.800",
-		},
-		_focus: {
-			bgColor: "zinc.800",
-		},
 	},
 	icon: {
 		color: "zinc.500",

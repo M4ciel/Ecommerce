@@ -1,0 +1,16 @@
+.header {
+	flex-direction: column;
+	overflow: hidden;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 200px;
+	background-image: url("/images/bg.jpg");
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: cover;
+	background-position: center;
+}
+
+.header::before {
+	background-color: rgba(0, 0, 0, 0.5);
+}

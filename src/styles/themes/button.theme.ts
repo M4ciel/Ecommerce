@@ -1,19 +1,28 @@
 import { defineStyle, defineStyleConfig } from "@chakra-ui/react";
 
 const baseStyle = defineStyle({
-	fontFamily: "Inter",
 	fontWeight: "semibold",
+	fontStyle: "",
+	borderRadius: 50,
+	color: "zinc.100",
 });
 
 const link = defineStyle({
-	color: "white",
+	color: "zinc.100",
 	bg: "none",
 	_hover: {
 		textDecor: "underline",
 	},
 	_active: {
-		color: "green.400",
+		color: "zinc.800",
 	},
 });
 
-export const buttonTheme = defineStyleConfig({ baseStyle, variants: { link } });
+const white = defineStyle({
+	bgColor: "white",
+});
+
+export const buttonTheme = defineStyleConfig({
+	baseStyle,
+	variants: { link, white },
+});

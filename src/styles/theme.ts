@@ -30,6 +30,7 @@ import { switchTheme } from "./themes/switch.theme";
 import { accordionTheme } from "./themes/accordion.theme";
 import { modalTheme } from "./themes/modal.theme";
 import { headingTheme } from "./themes/heading.theme";
+import { linkTheme } from "./themes/link.theme";
 
 const customTheme = extendTheme(
 	{
@@ -80,6 +81,7 @@ const customTheme = extendTheme(
 			Checkbox: checkboxTheme,
 			Heading: headingTheme,
 			Input: inputTheme,
+			Link: linkTheme,
 			Modal: modalTheme,
 			Radio: radioTheme,
 			Select: selectTheme,
@@ -87,7 +89,7 @@ const customTheme = extendTheme(
 		},
 	},
 	withDefaultColorScheme({
-		colorScheme: "green",
+		colorScheme: "fuchsia",
 		components: ["Button"],
 	})
 );
